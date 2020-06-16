@@ -591,28 +591,36 @@ p {
   display: inline-flex;
   text-decoration: none;
   border-radius: 4px;
-  padding: 5px 29px;
+  padding: 10px 29px;
   align-items: center;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) color 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-footer:hover,
 .button-footer:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--accent-color);
+  background-color: var(--primary-white-color);
+  color: var(--accent-color);
 }
 .icon-send {
-  fill: white;
+  fill: currentColor;
   margin-left: 10px;
   margin-right: 8px;
+}
+.icon-send:hover,
+.icon-send:focus {
+  fill: var(--accent-color);
 }
 .company {
   margin-top: 0px;
