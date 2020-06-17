@@ -569,7 +569,6 @@ p {
   display: flex;
   flex-direction: row;
   background-color: #2f303a;
-  width: 570px;
 }
 .subscribe-form {
   margin: 0 12px 0 0;
